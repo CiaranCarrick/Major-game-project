@@ -36,7 +36,7 @@ public class Enemydetection : MonoBehaviour {
 		float angle = Mathf.Acos(dot) * Mathf.Rad2Deg; //passes DOT through Acos, which returns the angle of DOT in radians.* by Rad2Deg to convert it to degrees.
 		//Debug.Log ( angle);
 		float distance = (Player.transform.position - transform.position).magnitude;//creates a float which stores position between A & B
-		Debug.Log (distance);
+		//Debug.Log (distance);
 		float Sightdistance =(this.sightend.transform.position - this.sightstart.transform.position).magnitude;//creates a float which stores position between A & B
 		sightstart.GetComponent<Light>().range = Sightdistance; //Set light range equal to that of sightends position
 

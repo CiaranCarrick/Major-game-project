@@ -3,13 +3,12 @@ using System.Collections;
 
 public class wintrigger : MonoBehaviour {
 	GameObject Player;
-	public static int Level=0;
+	public static int Level=1;
 	public Color myColour;
 	public Interaction interaction;
-	GameObject GM;
-	private GameObject canvas, Background;
+	private GameObject canvas, Background, GM;
 	private Colour colour;
-
+	
 	// Use this for initialization
 	void Start () {
 		GM = GameObject.Find ("GM");
@@ -18,25 +17,31 @@ public class wintrigger : MonoBehaviour {
 		interaction = Player.GetComponent<Interaction> ();
 		Background = GameObject.Find ("Quad");
 		colour = Background.GetComponent<Colour> ();
-		colour.Changecolour (wintrigger.Level-1);
+		colour.Changecolour (Level-1);
+		Level = Application.loadedLevel;
 	}
-
-
+	
+	
 	void OnTriggerEnter2D(Collider2D other){
 		if(Level==10)
 		{   
-			Level=0;
-			Application.LoadLevel (Level);  
+			Application.LoadLevel ("Menu");  
 			Destroy(GM);
 			Destroy(Background);
 		}
-
-		else{
-		Level++;
-		interaction.resetkeys();
-		Application.LoadLevel(Level);
+		
+		else if(Level<=10){
+			Level++;
+			interaction.resetkeys();
+			Application.LoadLevel(Level);
 		}
-
-
-}
+	}
+	void Update(){
+		if(Input.GetKeyDown("p"))
+		{
+			Destroy(GM);
+			Destroy(Background);
+			Application.LoadLevel("menu");
+		}
+	}
 }
