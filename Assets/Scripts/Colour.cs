@@ -5,7 +5,7 @@ public class Colour : MonoBehaviour {
 	public Color[] BackColors = new Color[10];
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		DontDestroyOnLoad (gameObject);
 		BackColors[0]=new Color(201f/255f, 196f/255f, 212f/255f,1);
 		BackColors [1] = BackColors [0];

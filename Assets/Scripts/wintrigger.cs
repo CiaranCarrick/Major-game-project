@@ -6,12 +6,16 @@ public class wintrigger : MonoBehaviour {
 	public static int Level=1;
 	public Color myColour;
 	public Interaction interaction;
-	private GameObject canvas, Background, GM;
+	private GameObject canvas, Background, GM, TimeUI;
 	private Colour colour;
-	
+	UITime ui; //instance of UI script
 	// Use this for initialization
 	void Start () {
 		GM = GameObject.Find ("GM");
+		TimeUI = GameObject.Find ("TimeUI");
+		if (TimeUI != null) {
+			ui = TimeUI.GetComponent<UITime> ();
+		}
 		Player = GameObject.Find ("Player");
 		GetComponent<Renderer>().material.color = myColour;
 		interaction = Player.GetComponent<Interaction> ();
@@ -31,17 +35,19 @@ public class wintrigger : MonoBehaviour {
 		}
 		
 		else if(Level<=10){
+			ui.LevelTime();
 			Level++;
 			interaction.resetkeys();
 			Application.LoadLevel(Level);
+			return;
 		}
 	}
+	
 	void Update(){
 		if(Input.GetKeyDown("p"))
 		{
-			Destroy(GM);
 			Destroy(Background);
-			Application.LoadLevel("menu");
+			Application.LoadLevel("Menu");
 		}
 	}
 }

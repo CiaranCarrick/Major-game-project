@@ -11,7 +11,7 @@ public class interactableactivate : MonoBehaviour {
 			buttons[i] = transform.GetChild (i).gameObject;
 		}
 	}
-		void Update () {
+	void Update () {
 		for (int i = 0; i < wintrigger.Level; i++) {
 			buttons [i].GetComponent<Button> ().interactable = true; 
 		}

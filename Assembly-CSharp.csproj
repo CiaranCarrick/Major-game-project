@@ -55,8 +55,10 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Movewalls.cs" />
      <Compile Include="Assets\Scripts\Opendoor.cs" />
+     <Compile Include="Assets\Scripts\Particles.cs" />
      <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\UI.cs" />
+     <Compile Include="Assets\Scripts\UITime.cs" />
      <Compile Include="Assets\Scripts\interactableactivate.cs" />
      <Compile Include="Assets\Scripts\wintrigger.cs" />
  <Reference Include="UnityEngine.UI">

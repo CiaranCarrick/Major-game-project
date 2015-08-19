@@ -10,20 +10,20 @@ public class Interaction : MonoBehaviour {
 	void Start(){
 		Activekeys = GameObject.FindGameObjectsWithTag("Key");
 		keys = GameObject.Find ("GM");
-		ui= keys.GetComponent<UI> ();
+		ui = keys.GetComponent<UI> ();
 		resetkeys ();
 		hitsound = gameObject.AddComponent<AudioSource> ();//
 		hitclip = (AudioClip)Resources.Load ("Sounds/Pickup_Coin148");// Loading the tracks from Resources
 		hitsound.clip = hitclip; //Assigning the hit clip to the AudioSource Component
-		hitsound.volume = 0.05f;
+		hitsound.volume = 0.2f;
 
 	}
 
 	public void resetkeys(){
-		ui.RedKey = false;
-		ui.YellowKey = false;
-		ui.GreenKey = false;
-		ui.BlueKey = false;
+			ui.RedKey = false;
+			ui.YellowKey = false;
+			ui.GreenKey = false;
+			ui.BlueKey = false;
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
