@@ -32,7 +32,7 @@ public class Particles : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
-	public void CreateParticles(Vector3 pos, Color _col, float _spd, int part_amount){// Targets pos, Targets Color & Target speed
+	public void CreateParticles(Vector3 pos, Color _col, float _spd, int part_amount){// Location of particles, Color & Parts speed and amount
 		for (int i = 0; i < part_amount; i++) {
 			GameObject particle = GameObject.CreatePrimitive (PrimitiveType.Quad);
 			particle.GetComponent<Renderer>().material.shader = Shader.Find ("Unlit/Color");// Removes light effect on Quad

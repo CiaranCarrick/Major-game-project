@@ -13,7 +13,7 @@ public class wintrigger : MonoBehaviour {
 	void Start () {
 		GM = GameObject.Find ("GM");
 		TimeUI = GameObject.Find ("TimeUI");
-		if (TimeUI != null) {
+		if (TimeUI != null) {//If is exists
 			ui = TimeUI.GetComponent<UITime> ();
 		}
 		Player = GameObject.Find ("Player");

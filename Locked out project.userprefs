@@ -2,9 +2,7 @@
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI.cs">
     <Files>
-      <File FileName="Assets\Scripts\UI.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\wintrigger.cs" Line="46" Column="1" />
-      <File FileName="..\..\..\Semester 1\Monday class\Assignment1\Assignment1_C12548143\Assets\Scripts\Main.cs" Line="205" Column="3" />
+      <File FileName="Assets\Scripts\UI.cs" Line="73" Column="74" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
