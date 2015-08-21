@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class UITime : UI{ //Inherits from UI class
-	public Vector2 scaleonratio1 =new Vector2(0.1f, 0.2f);
+	public Vector2 scaleonratio1 =new Vector2(0.1f, 0.3f);
 	private float widthheightratio;
 	private float total=0;//Local variables of Function
 	private int i=0;//Field for iterating though hold array
@@ -25,7 +25,7 @@ public class UITime : UI{ //Inherits from UI class
 	}
 	//
 	void Start(){
-		widthheightratio = (float)Screen.width / Screen.height * Screen.height*1.30f;
+		widthheightratio = (float)Screen.width / Screen.height * Screen.height*1.35f;//Screen aspect ratio
 		if (FindObjectsOfType(GetType()).Length > 1)//Prevent copies of gameobject made, no time to look into Singletons 
 		{
 			Destroy(gameObject);
@@ -40,7 +40,7 @@ public class UITime : UI{ //Inherits from UI class
 	}
 
 	void OnGUI(){
-		GUI.Box(new Rect(scaleonratio1.x, 18,widthheightratio*scaleonratio1.x, widthheightratio*scaleonratio1.y),"");
+		GUI.Box(new Rect(scaleonratio1.x, 18,75, 180),"");
 		guiStyle.fontSize = 10;guiStyle.normal.textColor = Color.white;//change the font size + colour
 		GUI.Label (new Rect (5, 30, Screen.width, Screen.height), "Time: " + time.ToString ("f2"));
 		GUI.Label (new Rect (5, 45, Screen.width, Screen.height), "LevelTimes");

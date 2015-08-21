@@ -16,6 +16,7 @@ public class UI : MonoBehaviour {
 	public float time;
 	
 	void Start(){
+		Application.targetFrameRate = 60;
 		//
 		debugmode = false; //Change to true for access to all levels from the menu scene
 		//

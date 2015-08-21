@@ -49,7 +49,7 @@ public class Enemydetection : MonoBehaviour{
 
 				if (middlehit) {
 					if (middlehit.transform.gameObject == Player) {
-						bam.CreateParticles (Player.transform.position, middlehit.collider.GetComponent<Renderer>().material.color, 0.2f, 20);
+						bam.CreateParticles (Player.transform.position, new Color(254f/255f, 87f/255f, 69f/255f,1), 0.2f, 20);
 						spotted = true;
 						Spotted ();
 						return;
@@ -57,7 +57,7 @@ public class Enemydetection : MonoBehaviour{
 				}
 				if (hit) {
 					if (hit.transform.gameObject == Player) {
-						bam.CreateParticles (Player.transform.position, hit.collider.GetComponent<Renderer>().material.color, 0.2f, 20);
+						bam.CreateParticles (Player.transform.position, new Color(254f/255f, 87f/255f, 69f/255f,1), 0.2f, 20);
 						spotted = true;
 						Spotted ();
 						return;
