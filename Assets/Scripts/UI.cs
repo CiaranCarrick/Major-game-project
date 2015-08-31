@@ -66,7 +66,7 @@ public class UI : MonoBehaviour {
 	void OnGUI(){
 		guiStyle.fontSize = 10;guiStyle.normal.textColor = Color.white;guiStyle.alignment = TextAnchor.UpperLeft;
 		//change the font size + colour
-		GUI.Label (new Rect (Screen.width - 45, Screen.height- 15, Screen.width, Screen.height), "ver.1.18", guiStyle);
+		GUI.Label (new Rect (Screen.width - 45, Screen.height- 15, Screen.width, Screen.height), "ver.1.2", guiStyle);
 		if(debugmode==true){//DEBUG ONLY
 			deltaTime += (Time.deltaTime -deltaTime) * 0.1f;
 

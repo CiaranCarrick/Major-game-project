@@ -46,6 +46,7 @@ public class wintrigger : MonoBehaviour {
 	void Update(){
 		if(Input.GetKeyDown("p"))
 		{
+			ui.total=0;//
 			Destroy(Background);
 			Application.LoadLevel("Menu");
 		}

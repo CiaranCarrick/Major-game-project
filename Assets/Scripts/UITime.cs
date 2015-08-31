@@ -4,7 +4,7 @@ using System.Collections;
 public class UITime : UI{ //Inherits from UI class
 	public Vector2 scaleonratio1 =new Vector2(0.1f, 0.3f);
 	private float widthheightratio;
-	private float total=0;//Local variables of Function
+	public float total=0;//Local variables of Function
 	private int i=0;//Field for iterating though hold array
 	public float[] hold=new float[10];
 
