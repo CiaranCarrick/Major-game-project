@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Monday class\DT8999_GamesProg-master - Copy\Assets\State.cs">
     <Files>
-      <File FileName="Assets\Scripts\UI.cs" Line="21" Column="20" />
-      <File FileName="Assets\Scripts\UITime.cs" Line="44" Column="51" />
+      <File FileName="..\..\Monday class\DT8999_GamesProg-master - Copy\Assets\State.cs" Line="14" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
